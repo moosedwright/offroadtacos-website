@@ -6,6 +6,18 @@ Single-page website for Off Road Mexican Food, the green taco truck at 641 S 500
 
 To swap the logo, replace the base64 data in the `<symbol id="logo">` near the top of `<body>`.
 
+## English and Spanish
+
+The EN / ES switch sits in the top bar. English text lives in the HTML; every translatable element has a `data-i18n` key, and the Spanish for each key is in the `ES` object at the top of the script. To change copy, edit the English in the HTML and the matching Spanish entry together.
+
+- The choice is remembered on that device. Spanish-language browsers start in Spanish.
+- Link straight to Spanish with `?lang=es` (for Spanish social posts or flyers).
+- The live open/closed text, hours, award seal and the catering text-message template all switch too.
+
+## Ordering
+
+DoorDash (delivery and pickup): https://www.doordash.com/store/off-road-mexican-food-american-fork-33566525/ — linked in the hero, menu intro, phone action bar and footer, and in the schema as an `OrderAction`.
+
 ## Brand colors
 
 Sampled from the logo. The page uses only these (plus transparencies of them):
@@ -27,7 +39,7 @@ Any static host works. Point it at this repo with no build command and `/` as th
 ## Before launch
 
 - Confirm with the owner that they take phone orders and that (385) 283-0268 can receive texts.
-- Confirm burrito names and spellings.
+- Confirm burrito names and spellings. DoorDash lists "Birria Burrito" and "Red Birria Peak a Boo" separately; the site treats them as one.
 - Once the domain is known, add `<link rel="canonical">`, `og:url`, `og:image` (the logo) and schema `logo` / `url` to the `<head>`.
 - Add the site's URL to the Google Business Profile.
 - Update the rating and review count (hero and the Best of 2025 section) now and then.
