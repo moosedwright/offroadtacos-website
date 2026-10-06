@@ -2,7 +2,9 @@
 
 Single-page website for Off Road Mexican Food, the green taco truck at 641 S 500 E St, American Fork, UT 84003. Explore the flavor.
 
-`index.html` holds the markup, styles, Restaurant schema (JSON-LD) and a small script that shows live open/closed status in America/Denver time. `assets/` holds the logo and icons. The only external request is Google Fonts (Barlow and Barlow Condensed).
+`index.html` is self-contained: markup, styles, the logo (embedded once and reused in the hero and footer), Restaurant schema (JSON-LD) and a small script that shows live open/closed status in America/Denver time. It works opened on its own, with nothing next to it. `assets/` holds only the home-screen icon for phones. The only external request is Google Fonts (Barlow and Barlow Condensed).
+
+To swap the logo, replace the base64 data in the `<symbol id="logo">` near the top of `<body>`.
 
 ## Brand colors
 
