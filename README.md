@@ -46,4 +46,4 @@ Any static host works. Point it at this repo with no build command and `/` as th
 
 ## Editing hours
 
-Hours are written into the page in several places. Search `index.html` for `8 AM` and `7 PM` and update every match, plus the `HOURS` object in the script (minutes after midnight) and `opens` / `closes` in the JSON-LD.
+Hours are written into the page in several places, in both languages. Search `index.html` for `AM`, `PM`, `a.m.` and `p.m.` (times use `&nbsp;` between number and suffix, e.g. `8&nbsp;AM`) and update every match, plus the `HOURS` object in the script (minutes after midnight) and `opens` / `closes` in the JSON-LD.
