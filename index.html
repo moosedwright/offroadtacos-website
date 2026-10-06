@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Off Road Mexican Food | Street Tacos &amp; Birria in American Fork, UT</title>
-<meta name="description" content="Lime-green taco truck at 641 S 500 E in American Fork, Utah. Street tacos, quesabirria, asada fries and breakfast burritos, Monday to Friday 8 AM to 7 PM. Call (385) 283-0268.">
-<meta name="theme-color" content="#8DC63F">
+<meta name="description" content="Best of 2025 Mexican restaurant in American Fork. Street tacos, quesabirria, asada fries and breakfast burritos from the green truck at 641 S 500 E, Monday to Friday 8 AM to 7 PM.">
+<meta name="theme-color" content="#62F006">
 <meta name="geo.region" content="US-UT">
 <meta name="geo.placename" content="American Fork">
 <meta name="geo.position" content="40.3641661;-111.7843692">
@@ -14,9 +14,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Off Road Mexican Food">
 <meta property="og:title" content="Off Road Mexican Food: street tacos &amp; birria in American Fork">
-<meta property="og:description" content="The lime-green taco truck at 641 S 500 E, American Fork. Open Monday to Friday, 8 AM to 7 PM.">
+<meta property="og:description" content="Best of 2025 Mexican restaurant in American Fork. The green taco truck at 641 S 500 E, open Monday to Friday, 8 AM to 7 PM.">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238DC63F'/%3E%3Cpath d='M8 48 24 24l8 11 7-9 17 22z' fill='%2323261F'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&amp;family=Barlow:wght@400;600&amp;display=swap">
@@ -26,7 +27,9 @@
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Off Road Mexican Food",
+  "slogan": "Explore the flavor",
   "description": "Food truck serving street tacos, birria, burritos and breakfast in American Fork, Utah.",
+  "award": "BusinessRate Best of 2025, Mexican Restaurant, American Fork, UT",
   "servesCuisine": ["Mexican", "Tacos", "Birria"],
   "priceRange": "$10–20",
   "telephone": "+1-385-283-0268",
@@ -116,18 +119,17 @@
 </script>
 
 <style>
+/* Brand colors are sampled from the Off Road logo. Everything else is a transparency of these. */
 :root {
-  --lime: #8DC63F;
-  --lime-deep: #5F8A24;
-  --char: #23261F;
-  --char-2: #33372D;
-  --sand: #E9DCC3;
-  --sand-2: #CDB891;
-  --sand-hi: #F4ECDC;
-  --rock: #9E3D1B;
-  --wood: #5E3B22;
-  --wood-dark: #3E2614;
-  --wood-hi: #F1E6CF;
+  --lime: #62F006;
+  --black: #000000;
+  --white: #FFFFFF;
+  --cream: #F2ECDC;
+
+  --cream-soft: rgba(242, 236, 220, .78);
+  --cream-line: rgba(242, 236, 220, .18);
+  --black-soft: rgba(0, 0, 0, .72);
+  --black-line: rgba(0, 0, 0, .14);
 
   --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -137,7 +139,7 @@
   --fs-h4: 1.4375rem;
   --fs-h3: clamp(1.875rem, 3.2vw, 2.25rem);
   --fs-h2: clamp(2.375rem, 5.4vw, 3.75rem);
-  --fs-h1: clamp(3rem, 8.6vw, 6rem);
+  --fs-h1: clamp(3rem, 8vw, 5.5rem);
 
   --bar-h: 44px;
   --maxw: 1180px;
@@ -149,8 +151,8 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
   margin: 0;
-  background: var(--sand);
-  color: var(--char);
+  background: var(--black);
+  color: var(--cream);
   font: 400 var(--fs-body)/1.55 var(--body);
   -webkit-font-smoothing: antialiased;
 }
@@ -158,22 +160,18 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 800; line-height: 0.9
 p, ul, ol, dl, dd, table { margin: 0; }
 a { color: inherit; }
 a[href^="tel:"] { white-space: nowrap; }
-svg { flex: none; }
+img, svg { display: block; }
 :focus-visible { outline: 3px solid currentColor; outline-offset: 3px; border-radius: 2px; }
 
 .wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
 .band { padding-block: clamp(64px, 9vw, 116px); }
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; overflow: hidden;
-  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
-}
 .skip {
   position: absolute; left: 12px; top: -60px; z-index: 100;
-  background: var(--lime); color: var(--char); padding: 10px 14px; font-weight: 600; border-radius: var(--radius);
+  background: var(--lime); color: var(--black); padding: 10px 14px; font-weight: 600; border-radius: var(--radius);
 }
 .skip:focus { top: 8px; }
 
-/* Buttons */
+/* Buttons: filled ones flip to white on hover, outlined ones fill with their own color. */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   min-height: 52px; padding: 0 22px; border-radius: var(--radius);
@@ -181,145 +179,119 @@ svg { flex: none; }
   border: 2px solid transparent; transition: background-color .15s, color .15s, border-color .15s;
 }
 .btn svg { width: 20px; height: 20px; }
-.btn-dark { background: var(--char); color: var(--sand-hi); }
-.btn-dark:hover { background: var(--char-2); }
-.btn-line { border-color: var(--char); color: var(--char); }
-.btn-line:hover { background: var(--char); color: var(--sand-hi); }
-.btn-lime { background: var(--lime); color: var(--char); }
-.btn-lime:hover { background: #A2D45A; }
-.btn-line-light { border-color: var(--sand); color: var(--sand-hi); }
-.btn-line-light:hover { background: var(--sand-hi); color: var(--char); }
+.btn-black { background: var(--black); color: var(--cream); }
+.btn-black:hover { background: var(--white); color: var(--black); border-color: var(--black); }
+.btn-lime { background: var(--lime); color: var(--black); }
+.btn-lime:hover { background: var(--white); }
+.btn-line { border-color: var(--black); color: var(--black); }
+.btn-line:hover { background: var(--black); color: var(--cream); }
+.btn-line-light { border-color: var(--cream); color: var(--cream); }
+.btn-line-light:hover { background: var(--cream); color: var(--black); }
 
-/* Status bar */
-.statusbar {
-  position: sticky; top: 0; z-index: 50;
-  background: var(--char); color: var(--sand);
-  font-size: var(--fs-small);
-}
-.statusbar .wrap {
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  min-height: var(--bar-h);
-}
-.status { display: inline-flex; align-items: center; gap: 10px; }
-.status strong { font-weight: 600; color: var(--sand-hi); }
-.dot { position: relative; width: 10px; height: 10px; border-radius: 50%; background: var(--sand-2); }
+/* Live status dot, used in the status bar and the hero */
+.dot { position: relative; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--cream-soft); }
 .is-open .dot { background: var(--lime); }
-.is-open.is-soon .dot { background: #E2B23A; }
 .is-open .dot::after {
   content: ""; position: absolute; inset: -4px; border-radius: 50%;
   border: 2px solid var(--lime); animation: pulse 2s ease-out infinite;
 }
+.is-open.is-soon .dot::after { animation: none; }
 @keyframes pulse { from { opacity: .9; transform: scale(.6); } to { opacity: 0; transform: scale(1.6); } }
-.statusbar-where { display: none; align-items: center; gap: 8px; min-height: 44px; text-decoration: none; }
+
+/* Status bar */
+.statusbar { position: sticky; top: 0; z-index: 50; background: var(--black); color: var(--cream); font-size: var(--fs-small); }
+.statusbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--bar-h); }
+.status { display: inline-flex; align-items: center; gap: 10px; }
+.status strong { font-weight: 600; color: var(--white); }
+.statusbar-where, .statusbar-call { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; text-decoration: none; }
+.statusbar-where { display: none; }
+.statusbar-call { font-weight: 600; color: var(--white); }
 .statusbar-where:hover, .statusbar-call:hover { color: var(--lime); }
-.statusbar-where svg, .statusbar-call svg { width: 16px; height: 16px; }
-.statusbar-call {
-  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
-  text-decoration: none; font-weight: 600; color: var(--sand-hi);
-}
+.statusbar svg { width: 16px; height: 16px; }
 @media (min-width: 860px) { .statusbar-where { display: inline-flex; } }
 @media (max-width: 420px) { .statusbar-call .num { display: none; } }
 
 /* Hero */
-.hero { background: var(--lime); position: relative; }
-.hero-grid {
-  display: grid; gap: 40px;
-  padding-top: clamp(40px, 7vw, 88px);
-  padding-bottom: clamp(36px, 5vw, 56px);
-}
+.hero { background: var(--lime); color: var(--black); }
+.hero-grid { display: grid; gap: 28px; padding-top: clamp(28px, 5vw, 64px); padding-bottom: clamp(20px, 3vw, 32px); }
+.hero-logo { width: clamp(180px, 52vw, 230px); height: auto; aspect-ratio: 1; }
 @media (min-width: 900px) {
-  .hero-grid { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); align-items: end; gap: 56px; }
+  .hero-grid { grid-template-columns: minmax(300px, 420px) minmax(0, 1fr); align-items: center; gap: 64px; }
+  .hero-logo { width: 100%; }
 }
-.wordmark { display: flex; align-items: baseline; gap: 10px; margin-bottom: clamp(24px, 4vw, 40px); }
-.wordmark b { font: 800 1.75rem/1 var(--display); }
-.wordmark span { font-weight: 600; font-size: var(--fs-small); }
 .hero h1 { font-size: var(--fs-h1); line-height: 0.9; max-width: 13ch; text-wrap: balance; }
-.lede { margin-top: 24px; max-width: 46ch; font-size: 1.1875rem; line-height: 1.5; }
-.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.lede { margin-top: 20px; max-width: 46ch; font-size: 1.1875rem; line-height: 1.5; }
+.hero-status {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 24px;
+  padding: 10px 18px; border-radius: 999px; background: var(--black); color: var(--cream);
+}
+.hero-status strong { color: var(--white); font-weight: 600; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 @media (max-width: 480px) { .cta-row .btn { flex: 1 1 100%; } }
-.rating {
-  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 14px;
+.creds { list-style: none; padding: 0; margin-top: 16px; display: flex; flex-wrap: wrap; gap: 0 28px; }
+.creds a {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
   font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 3px;
 }
-.rating svg { width: 18px; height: 18px; }
+.creds svg { width: 20px; height: 20px; }
+.treeline { width: 100%; height: clamp(56px, 8vw, 110px); margin-bottom: -1px; }
 
-.today {
-  background: var(--char); color: var(--sand);
-  border-radius: var(--radius); padding: 28px 28px 24px;
-  box-shadow: 0 10px 0 var(--lime-deep);
+/* Menu: black, with a faint food-doodle texture like the truck's reels */
+.menu {
+  background-color: var(--black);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300' fill='none' stroke='%23F2ECDC' stroke-opacity='.11' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(18 34) rotate(-12)'%3E%3Cpath d='M0 34a34 34 0 0 1 68 0z'/%3E%3Cpath d='M6 30q5-9 10 0t10 0 10 0 10 0 10 0'/%3E%3Cpath d='M16 18l3 3M34 12l2 4M50 18l-2 3'/%3E%3C/g%3E%3Cg transform='translate(170 22) rotate(18)'%3E%3Cpath d='M8 6c22 0 38 14 42 40-16-6-34-18-42-40z'/%3E%3Cpath d='M8 6c-2-6 2-10 8-10'/%3E%3C/g%3E%3Cg transform='translate(236 120) rotate(6)'%3E%3Cpath d='M0 8h30l-4 44H4z'/%3E%3Cpath d='M-2 8h34M18 8l5-16h7'/%3E%3Cpath d='M3 22h24'/%3E%3C/g%3E%3Cg transform='translate(40 150) rotate(-24)'%3E%3Crect x='0' y='0' width='72' height='30' rx='15'/%3E%3Cpath d='M18 0v30M34 0c6 10 6 20 0 30'/%3E%3C/g%3E%3Cg transform='translate(150 180)'%3E%3Cpath d='M0 30a30 30 0 0 1 60 0z'/%3E%3Cpath d='M30 30V4M30 30L10 12M30 30l20-18'/%3E%3C/g%3E%3Cg transform='translate(110 98)'%3E%3Cpath d='M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z'/%3E%3C/g%3E%3Cg transform='translate(24 252)'%3E%3Cpath d='M0 6l6 14 6-14M18 6l6 14 6-14'/%3E%3C/g%3E%3Cg transform='translate(250 250) rotate(-20)'%3E%3Cpath d='M0 0h26v14H0zM4 14v14M22 14v14'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 300px 300px;
+  padding-top: clamp(32px, 5vw, 56px);
 }
-.today-label { font-size: var(--fs-small); }
-.today-head { margin-top: 6px; font: 800 clamp(2.5rem, 5vw, 3.25rem)/1 var(--display); color: var(--sand-hi); }
-.today.is-open .today-head { color: var(--lime); }
-.today-detail { margin-top: 4px; font-size: 1.125rem; }
-.today dl { margin-top: 22px; border-top: 1px solid var(--char-2); }
-.today dl div {
-  display: grid; grid-template-columns: 7.5rem 1fr; gap: 12px;
-  padding: 11px 0; border-bottom: 1px solid var(--char-2);
-}
-.today dt { color: var(--sand-2); }
-.today dd { color: var(--sand-hi); }
-
-.ridge { display: block; width: 100%; height: clamp(48px, 7vw, 96px); margin-bottom: -1px; }
-
-/* Menu */
-.band.menu { padding-top: clamp(24px, 4vw, 48px); }
 .section-head { max-width: 62ch; }
 .section-head h2 { font-size: var(--fs-h2); }
 .section-head p { margin-top: 16px; font-size: 1.125rem; }
+.menu .section-head h2, .menu h3, .find h2 { color: var(--white); }
+.menu .section-head a { color: var(--lime); }
 .menu-nav {
   position: sticky; top: var(--bar-h); z-index: 20;
   margin: 28px calc(var(--gutter) * -1) 0; padding: 12px var(--gutter);
-  background: var(--sand); border-bottom: 1px solid var(--sand-2);
+  background: var(--black); border-bottom: 1px solid var(--cream-line);
   overflow-x: auto; scrollbar-width: none;
 }
 .menu-nav::-webkit-scrollbar { display: none; }
 .menu-nav ul { display: flex; gap: 8px; list-style: none; padding: 0; }
 .menu-nav a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
-  border: 2px solid var(--char); border-radius: 999px;
+  border: 2px solid var(--cream); border-radius: 999px;
   font-weight: 600; text-decoration: none; white-space: nowrap;
 }
-.menu-nav a:hover { background: var(--char); color: var(--sand-hi); }
+.menu-nav a:hover { background: var(--lime); border-color: var(--lime); color: var(--black); }
 
 .menu-group { padding-top: clamp(48px, 6vw, 72px); scroll-margin-top: calc(var(--bar-h) + 70px); }
 .menu-group > h3 { font-size: var(--fs-h3); }
-.group-note { margin-top: 10px; max-width: 60ch; }
-.items {
-  list-style: none; padding: 0; margin-top: 24px;
-  display: grid; column-gap: 48px;
-}
+.group-note { margin-top: 10px; max-width: 60ch; color: var(--cream-soft); }
+.items { list-style: none; padding: 0; margin-top: 24px; display: grid; column-gap: 48px; }
 @media (min-width: 760px) { .items { grid-template-columns: 1fr 1fr; } }
-.items li { padding: 16px 0 18px; border-top: 1px solid var(--sand-2); }
-.items h4 { font-size: var(--fs-h4); font-weight: 600; line-height: 1.1; }
-.items p { margin-top: 4px; color: #4A4B3F; max-width: 52ch; }
+.items li { padding: 16px 0 18px; border-top: 1px solid var(--cream-line); }
 .items h4, .blade h4 { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.items h4 { font-size: var(--fs-h4); font-weight: 600; line-height: 1.1; color: var(--white); }
+.items p { margin-top: 4px; color: var(--cream-soft); max-width: 52ch; }
 .tag {
-  display: inline-block; padding: 4px 8px 5px;
-  background: var(--rock); color: var(--sand-hi); border-radius: 3px;
+  display: inline-block; padding: 4px 8px 5px; border-radius: 3px;
+  background: var(--lime); color: var(--black);
   font: 600 0.8125rem/1 var(--body); letter-spacing: 0.01em;
 }
 .drinks-grid { display: grid; gap: 0 48px; }
 @media (min-width: 760px) { .drinks-grid { grid-template-columns: 1fr 1fr; } }
-.drinks-grid h4.sub { font-size: 1.25rem; font-weight: 600; margin-top: 28px; color: var(--lime-deep); }
+.drinks-grid h4.sub { font-size: 1.25rem; font-weight: 600; margin-top: 28px; color: var(--lime); }
 .drinks-grid .items { grid-template-columns: 1fr; margin-top: 12px; }
 
-/* Trail burritos: a junction signpost */
-.trailpost { position: relative; max-width: 940px; margin: 40px auto 0; padding-bottom: 56px; }
+/* Trail burritos: a junction signpost, cream on black like the one in the logo */
+.trailpost { position: relative; max-width: 940px; margin: 40px auto 0; padding-bottom: 40px; }
 .trailpost::before {
-  content: ""; position: absolute; top: 24px; bottom: 0; left: 50%; width: 24px; transform: translateX(-50%);
-  background: linear-gradient(90deg, var(--wood-dark), #714829 45%, var(--wood-dark));
-  border-radius: 4px 4px 0 0;
-}
-.trailpost::after {
-  content: ""; position: absolute; bottom: 0; left: 50%; width: 120px; height: 14px; transform: translateX(-50%);
-  background: radial-gradient(closest-side, rgba(62, 38, 20, .35), transparent);
+  content: ""; position: absolute; top: 24px; bottom: 0; left: 50%; width: 22px; transform: translateX(-50%);
+  background: var(--cream); border-radius: 3px 3px 0 0;
 }
 .junction {
   position: relative; z-index: 1; margin: 0 auto 22px; max-width: 520px;
-  background: var(--wood); color: var(--wood-hi); text-align: center;
+  background: var(--cream); color: var(--black); text-align: center;
   padding: 16px 24px 18px; border-radius: 4px;
-  box-shadow: inset 0 0 0 3px rgba(241, 230, 207, .14);
 }
 .junction p:first-child { font: 800 1.75rem/1 var(--display); }
 .junction p + p { margin-top: 6px; font-size: var(--fs-small); }
@@ -327,10 +299,7 @@ svg { flex: none; }
 .blade {
   position: relative; width: calc(50% + 22px); margin-left: calc(50% - 22px);
   padding: 18px 54px 20px 40px;
-  background:
-    repeating-linear-gradient(180deg, rgba(255, 255, 255, .035) 0 2px, transparent 2px 9px),
-    var(--wood);
-  color: var(--wood-hi);
+  background: var(--cream); color: var(--black);
   clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 50%, calc(100% - 34px) 100%, 0 100%);
   transform: rotate(-1.1deg);
 }
@@ -343,15 +312,14 @@ svg { flex: none; }
 .blade:nth-child(even) h4 { justify-content: flex-end; }
 .blade::before {
   content: ""; position: absolute; top: 50%; left: 14px; width: 9px; height: 9px; margin-top: -4.5px;
-  border-radius: 50%; background: radial-gradient(circle at 35% 35%, #9C8A70, #2B1B0E 70%);
+  border-radius: 50%; background: var(--black);
 }
 .blade:nth-child(even)::before { left: auto; right: 14px; }
 .blade h4 { font-size: clamp(1.625rem, 3vw, 2rem); font-weight: 800; line-height: 1; }
-.blade p { margin-top: 6px; color: #E2D3B6; }
-.blade .tag { background: var(--lime); color: var(--char); }
+.blade p { margin-top: 6px; color: var(--black-soft); }
+.blade .tag { background: var(--black); color: var(--lime); }
 @media (max-width: 720px) {
   .trailpost::before { left: 22px; transform: none; }
-  .trailpost::after { left: 34px; }
   .junction { margin-left: 0; text-align: left; }
   .blade, .blade:nth-child(even) {
     width: auto; margin: 0 0 0 10px;
@@ -363,44 +331,46 @@ svg { flex: none; }
   .blade:nth-child(even)::before { left: 14px; right: auto; }
 }
 
+/* Best of 2025 and reviews */
+.proof { background: var(--white); color: var(--black); }
+.proof-grid { display: grid; gap: 36px; }
+@media (min-width: 900px) { .proof-grid { grid-template-columns: 260px minmax(0, 1fr); gap: 72px; align-items: start; } }
+.seal { width: clamp(170px, 44vw, 260px); height: auto; aspect-ratio: 1; }
+.seal text { font-family: var(--display); }
+.proof .section-head p { max-width: 54ch; }
+.proof h3 { margin-top: 44px; font-size: 1.5rem; font-weight: 600; }
+.blazes { list-style: none; padding: 0; margin-top: 12px; display: grid; gap: 0 48px; }
+@media (min-width: 760px) { .blazes { grid-template-columns: 1fr 1fr; } }
+.blazes li {
+  display: flex; align-items: center; gap: 16px; padding: 14px 0; border-top: 1px solid var(--black-line);
+  font: 600 1.5rem/1.15 var(--display);
+}
+.blazes li::before { content: ""; flex: none; width: 10px; height: 22px; border-radius: 2px; background: var(--black); }
+.proof .cta-row { margin-top: 32px; }
+
 /* Find us */
-.find { background: var(--char); color: var(--sand); }
-.find .section-head h2 { color: var(--sand-hi); }
+.find { background: var(--black); color: var(--cream); border-top: 6px solid var(--lime); }
 .find-grid { display: grid; gap: 48px; margin-top: 40px; }
 @media (min-width: 900px) { .find-grid { grid-template-columns: 1.1fr 1fr; gap: 72px; } }
-.addr { font-style: normal; font: 600 clamp(1.75rem, 3.4vw, 2.375rem)/1.1 var(--display); color: var(--sand-hi); }
+.addr { font-style: normal; font: 600 clamp(1.75rem, 3.4vw, 2.375rem)/1.1 var(--display); color: var(--white); }
 .addr span { display: block; }
 .parking { margin-top: 16px; max-width: 46ch; font-size: 1.125rem; }
 .facts { list-style: none; padding: 0; margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
-.facts li { padding: 7px 12px; border: 1px solid #4A4F41; border-radius: 999px; font-size: var(--fs-small); }
+.facts li { padding: 7px 12px; border: 1px solid var(--cream-line); border-radius: 999px; font-size: var(--fs-small); }
 .find .cta-row { margin-top: 28px; }
-.coords { margin-top: 28px; font-size: var(--fs-small); color: var(--sand-2); }
+.coords { margin-top: 28px; font-size: var(--fs-small); color: var(--cream-soft); }
 .hours { width: 100%; border-collapse: collapse; font-size: 1.125rem; }
-.hours caption { text-align: left; font: 800 var(--fs-h3)/1 var(--display); color: var(--sand-hi); padding-bottom: 16px; }
-.hours th, .hours td { padding: 13px 14px; border-bottom: 1px solid var(--char-2); text-align: left; }
+.hours caption { text-align: left; font: 800 var(--fs-h3)/1 var(--display); color: var(--white); padding-bottom: 16px; }
+.hours th, .hours td { padding: 13px 14px; border-bottom: 1px solid var(--cream-line); text-align: left; }
 .hours th { font-weight: 400; }
-.hours td { text-align: right; color: var(--sand-hi); }
-.hours tr.is-closed td { color: var(--sand-2); }
-.hours tr.is-today { background: var(--char-2); box-shadow: inset 4px 0 0 var(--lime); }
-.hours tr.is-today th { font-weight: 600; color: var(--sand-hi); }
+.hours td { text-align: right; color: var(--white); }
+.hours tr.is-closed td { color: var(--cream-soft); }
+.hours tr.is-today { background: rgba(98, 240, 6, .1); box-shadow: inset 4px 0 0 var(--lime); }
+.hours tr.is-today th { font-weight: 600; color: var(--white); }
 .hours tr.is-today th::after { content: "Today"; margin-left: 10px; font-size: 0.8125rem; font-weight: 600; color: var(--lime); }
 
-/* What regulars order */
-.reviews .section-head p { max-width: 54ch; }
-.blazes {
-  list-style: none; padding: 0; margin-top: 36px;
-  display: grid; gap: 4px 48px;
-}
-@media (min-width: 760px) { .blazes { grid-template-columns: 1fr 1fr; } }
-.blazes li {
-  display: flex; align-items: center; gap: 16px; padding: 14px 0; border-top: 1px solid var(--sand-2);
-  font: 600 1.5rem/1.15 var(--display);
-}
-.blazes li::before { content: ""; flex: none; width: 10px; height: 22px; border-radius: 2px; background: var(--lime-deep); }
-.reviews .cta-row { margin-top: 36px; }
-
 /* Catering */
-.catering { background: var(--lime); }
+.catering { background: var(--lime); color: var(--black); }
 .catering-grid { display: grid; gap: 32px; align-items: end; }
 @media (min-width: 900px) { .catering-grid { grid-template-columns: 1.3fr 1fr; gap: 64px; } }
 .catering .section-head p { max-width: 50ch; }
@@ -408,16 +378,16 @@ svg { flex: none; }
 .catering .hint { margin-top: 14px; font-size: var(--fs-small); max-width: 44ch; }
 
 /* Footer */
-.foot { background: var(--char); color: var(--sand); padding-block: 56px 40px; font-size: var(--fs-small); }
-.foot-grid { display: grid; gap: 28px; }
+.foot { background: var(--black); color: var(--cream); padding-block: 56px 40px; font-size: var(--fs-small); }
+.foot-grid { display: grid; gap: 28px; align-items: start; }
 @media (min-width: 760px) { .foot-grid { grid-template-columns: 1.2fr 1fr 1fr; } }
-.foot .wordmark { margin: 0; color: var(--sand-hi); }
+.foot-logo { width: 120px; height: 120px; }
 .foot address { font-style: normal; line-height: 1.6; }
-.foot h2 { font: 600 1rem/1.4 var(--body); color: var(--sand-hi); margin-bottom: 6px; }
+.foot h2 { font: 600 1rem/1.4 var(--body); color: var(--white); margin-bottom: 6px; }
 .foot a { text-underline-offset: 3px; }
 .foot a:hover { color: var(--lime); }
 .foot-links { list-style: none; padding: 0; margin-top: 14px; display: grid; gap: 6px; }
-.copy { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--char-2); color: var(--sand-2); }
+.copy { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--cream-line); color: var(--cream-soft); }
 
 /* Mobile action bar */
 .actionbar { display: none; }
@@ -427,8 +397,7 @@ svg { flex: none; }
     display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 8px;
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
     padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
-    background: var(--sand-hi); border-top: 1px solid var(--sand-2);
-    box-shadow: 0 -8px 24px rgba(35, 38, 31, .12);
+    background: var(--black); border-top: 1px solid var(--cream-line);
   }
   .actionbar .btn { min-height: 54px; padding: 0 8px; gap: 6px; font-size: 1rem; }
   .actionbar .btn svg { width: 18px; height: 18px; }
@@ -463,12 +432,16 @@ svg { flex: none; }
 
 <header class="hero">
   <div class="wrap hero-grid">
+    <img class="hero-logo" src="assets/logo-720.webp" srcset="assets/logo-320.webp 320w, assets/logo-720.webp 720w" sizes="(min-width: 900px) 420px, 230px" width="720" height="720" alt="Off Road Mexican Food logo" fetchpriority="high">
     <div>
-      <p class="wordmark"><b>Off Road</b> <span>Mexican Food</span></p>
       <h1>Street tacos and birria in American Fork</h1>
-      <p class="lede">A lime-green food truck at 641 S 500 E, in the Standard Plumbing Supply lot. Breakfast burritos from 8 AM, tacos and birria until 7, Monday through Friday.</p>
+      <p class="lede">The green food truck at 641 S 500 E, in the Standard Plumbing Supply lot. Breakfast burritos from 8 AM, tacos and birria until 7, Monday through Friday.</p>
+      <p class="hero-status" data-status>
+        <span class="dot" aria-hidden="true"></span>
+        <span><strong data-status-headline>Mon–Fri</strong> <span data-status-detail>8 AM–7 PM</span></span>
+      </p>
       <div class="cta-row">
-        <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Off+Road+Mexican+Food%2C+641+S+500+E+St%2C+American+Fork%2C+UT+84003&amp;destination_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">
+        <a class="btn btn-black" href="https://www.google.com/maps/dir/?api=1&amp;destination=Off+Road+Mexican+Food%2C+641+S+500+E+St%2C+American+Fork%2C+UT+84003&amp;destination_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8-8-2z"/></svg>
           Get directions
         </a>
@@ -477,26 +450,24 @@ svg { flex: none; }
           Call to order
         </a>
       </div>
-      <a class="rating" href="https://www.google.com/maps/search/?api=1&amp;query=Off+Road+Mexican+Food&amp;query_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.2 6.6.6-5 4.5 1.5 6.6L12 17l-6 3.4 1.5-6.6-5-4.5 6.6-.6z"/></svg>
-        Rated 4.8 on Google from 326 reviews
-      </a>
+      <ul class="creds">
+        <li>
+          <a href="#best">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>
+            Best of 2025, Mexican restaurant
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Off+Road+Mexican+Food&amp;query_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.2 6.6.6-5 4.5 1.5 6.6L12 17l-6 3.4 1.5-6.6-5-4.5 6.6-.6z"/></svg>
+            4.8 on Google from 326 reviews
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <aside class="today" data-status aria-label="Today's hours and location">
-      <p class="today-label">Today in American Fork</p>
-      <p class="today-head" data-status-headline>Mon–Fri</p>
-      <p class="today-detail" data-status-detail>8 AM to 7 PM</p>
-      <dl>
-        <div><dt>Weekdays</dt><dd>8 AM to 7 PM</dd></div>
-        <div><dt>Weekends</dt><dd>Closed</dd></div>
-        <div><dt>Where</dt><dd>641 S 500 E St</dd></div>
-        <div><dt>Parking</dt><dd>Free, in the Standard Plumbing Supply lot</dd></div>
-      </dl>
-    </aside>
   </div>
-  <svg class="ridge" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-    <path fill="#E9DCC3" d="M0 100V62l70-20 58 16 84-44 70 34 64-22 96 48 70-30 54 12 92-50 78 40 62-16 88 38 76-30 58 14 96-46 68 28 72-18 84 34 66-22 40 12V100z"/>
+  <svg class="treeline" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#000000" d="M4 120 L4 112 L-14 112 L-2 86 L-9 86 L0 64 L-4 64 L6 35 L16 64 L12 64 L21 86 L14 86 L26 112 L8 112 L8 120 Z M34 120 L34 112 L16 112 L29 87 L22 87 L31 66 L27 66 L37 38 L47 66 L43 66 L52 87 L45 87 L58 112 L40 112 L40 120 Z M62 120 L62 112 L47 112 L58 87 L52 87 L60 66 L56 66 L64 38 L73 66 L69 66 L77 87 L71 87 L82 112 L67 112 L67 120 Z M85 120 L85 115 L63 115 L78 98 L70 98 L81 84 L76 84 L88 66 L99 84 L94 84 L105 98 L97 98 L112 115 L91 115 L91 120 Z M114 120 L114 110 L100 110 L110 79 L105 79 L112 53 L109 53 L116 19 L124 53 L121 53 L128 79 L122 79 L132 110 L119 110 L119 120 Z M136 120 L136 109 L123 109 L133 75 L128 75 L134 46 L131 46 L139 7 L146 46 L143 46 L150 75 L145 75 L154 109 L141 109 L141 120 Z M160 120 L160 111 L140 111 L154 84 L146 84 L156 62 L152 62 L162 31 L174 62 L169 62 L179 84 L171 84 L185 111 L165 111 L165 120 Z M185 120 L185 112 L172 112 L182 87 L176 87 L183 65 L180 65 L187 37 L195 65 L192 65 L198 87 L193 87 L203 112 L190 112 L190 120 Z M201 120 L201 114 L186 114 L196 94 L191 94 L198 78 L195 78 L203 56 L211 78 L208 78 L216 94 L210 94 L220 114 L206 114 L206 120 Z M218 120 L218 112 L200 112 L213 89 L206 89 L215 69 L211 69 L221 43 L230 69 L226 69 L236 89 L228 89 L241 112 L223 112 L223 120 Z M248 120 L248 111 L230 111 L243 84 L236 84 L245 60 L241 60 L251 30 L261 60 L257 60 L266 84 L259 84 L272 111 L254 111 L254 120 Z M275 120 L275 112 L255 112 L269 89 L262 89 L272 68 L267 68 L278 42 L289 68 L284 68 L295 89 L287 89 L301 112 L281 112 L281 120 Z M301 120 L301 109 L278 109 L294 74 L285 74 L297 45 L292 45 L305 6 L318 45 L312 45 L324 74 L315 74 L332 109 L308 109 L308 120 Z M342 120 L342 113 L321 113 L335 92 L327 92 L338 75 L333 75 L344 51 L356 75 L351 75 L361 92 L353 92 L368 113 L347 113 L347 120 Z M368 120 L368 115 L352 115 L364 99 L358 99 L366 85 L362 85 L371 67 L380 85 L376 85 L384 99 L378 99 L389 115 L373 115 L373 120 Z M395 120 L395 110 L377 110 L390 78 L383 78 L392 51 L388 51 L397 16 L407 51 L403 51 L412 78 L405 78 L417 110 L400 110 L400 120 Z M418 120 L418 110 L395 110 L411 78 L402 78 L414 51 L409 51 L421 16 L434 51 L428 51 L440 78 L431 78 L448 110 L424 110 L424 120 Z M445 120 L445 109 L430 109 L441 77 L435 77 L443 49 L439 49 L448 12 L456 49 L453 49 L460 77 L454 77 L465 109 L450 109 L450 120 Z M467 120 L467 113 L443 113 L460 90 L451 90 L463 71 L457 71 L470 46 L483 71 L477 71 L489 90 L480 90 L497 113 L473 113 L473 120 Z M495 120 L495 110 L475 110 L489 80 L482 80 L492 54 L487 54 L498 21 L509 54 L504 54 L514 80 L506 80 L520 110 L500 110 L500 120 Z M521 120 L521 113 L508 113 L518 92 L512 92 L519 74 L516 74 L524 50 L531 74 L528 74 L535 92 L530 92 L540 113 L526 113 L526 120 Z M546 120 L546 114 L524 114 L539 98 L531 98 L542 83 L537 83 L548 64 L560 83 L555 83 L566 98 L558 98 L573 114 L551 114 L551 120 Z M573 120 L573 115 L560 115 L570 99 L564 99 L571 86 L568 86 L576 68 L584 86 L580 86 L588 99 L582 99 L592 115 L578 115 L578 120 Z M597 120 L597 112 L582 112 L593 86 L587 86 L595 64 L591 64 L599 35 L608 64 L604 64 L612 86 L606 86 L616 112 L602 112 L602 120 Z M618 120 L618 110 L604 110 L614 82 L608 82 L616 56 L612 56 L621 24 L629 56 L626 56 L633 82 L627 82 L638 110 L623 110 L623 120 Z M637 120 L637 114 L617 114 L631 98 L623 98 L633 83 L628 83 L639 64 L650 83 L646 83 L656 98 L648 98 L662 114 L642 114 L642 120 Z M665 120 L665 113 L650 113 L661 94 L655 94 L663 77 L659 77 L667 54 L676 77 L672 77 L680 94 L674 94 L685 113 L670 113 L670 120 Z M692 120 L692 113 L670 113 L685 93 L677 93 L688 75 L683 75 L694 52 L706 75 L701 75 L712 93 L704 93 L719 113 L697 113 L697 120 Z M729 120 L729 113 L714 113 L725 90 L719 90 L726 71 L723 71 L731 46 L740 71 L736 71 L744 90 L738 90 L749 113 L734 113 L734 120 Z M754 120 L754 114 L734 114 L749 98 L741 98 L751 84 L746 84 L757 65 L768 84 L764 84 L774 98 L766 98 L780 114 L760 114 L760 120 Z M790 120 L790 114 L775 114 L786 94 L780 94 L788 77 L784 77 L792 55 L801 77 L797 77 L805 94 L799 94 L810 114 L795 114 L795 120 Z M815 120 L815 113 L799 113 L810 93 L804 93 L812 75 L809 75 L818 52 L827 75 L823 75 L831 93 L825 93 L837 113 L820 113 L820 120 Z M835 120 L835 111 L821 111 L831 85 L826 85 L833 63 L830 63 L837 34 L845 63 L842 63 L849 85 L844 85 L854 111 L840 111 L840 120 Z M853 120 L853 113 L834 113 L847 91 L840 91 L850 72 L845 72 L856 48 L866 72 L862 72 L872 91 L864 91 L878 113 L858 113 L858 120 Z M880 120 L880 112 L857 112 L874 88 L864 88 L876 67 L871 67 L884 40 L896 67 L891 67 L903 88 L894 88 L910 112 L887 112 L887 120 Z M916 120 L916 114 L893 114 L909 96 L900 96 L912 80 L906 80 L919 60 L931 80 L926 80 L937 96 L928 96 L944 114 L922 114 L922 120 Z M943 120 L943 110 L920 110 L936 79 L928 79 L939 53 L934 53 L946 18 L959 53 L953 53 L965 79 L956 79 L972 110 L949 110 L949 120 Z M973 120 L973 110 L958 110 L969 81 L963 81 L971 56 L967 56 L976 23 L984 56 L980 56 L988 81 L982 81 L993 110 L978 110 L978 120 Z M1000 120 L1000 109 L985 109 L996 76 L990 76 L997 47 L994 47 L1002 9 L1010 47 L1007 47 L1015 76 L1009 76 L1019 109 L1005 109 L1005 120 Z M1025 120 L1025 112 L1006 112 L1020 90 L1012 90 L1022 70 L1017 70 L1028 44 L1039 70 L1034 70 L1044 90 L1036 90 L1050 112 L1031 112 L1031 120 Z M1049 120 L1049 109 L1036 109 L1046 75 L1040 75 L1047 46 L1044 46 L1052 8 L1059 46 L1056 46 L1063 75 L1057 75 L1067 109 L1054 109 L1054 120 Z M1066 120 L1066 114 L1046 114 L1060 94 L1052 94 L1063 77 L1058 77 L1069 55 L1080 77 L1076 77 L1086 94 L1078 94 L1092 114 L1072 114 L1072 120 Z M1101 120 L1101 113 L1081 113 L1095 93 L1087 93 L1097 76 L1093 76 L1103 53 L1114 76 L1109 76 L1119 93 L1112 93 L1126 113 L1106 113 L1106 120 Z M1125 120 L1125 115 L1104 115 L1119 99 L1111 99 L1121 85 L1116 85 L1128 68 L1139 85 L1134 85 L1145 99 L1137 99 L1151 115 L1130 115 L1130 120 Z M1152 120 L1152 110 L1133 110 L1146 78 L1139 78 L1148 51 L1144 51 L1154 16 L1165 51 L1160 51 L1170 78 L1163 78 L1176 110 L1157 110 L1157 120 Z M1181 120 L1181 109 L1165 109 L1176 77 L1170 77 L1178 48 L1175 48 L1184 12 L1192 48 L1188 48 L1197 77 L1190 77 L1202 109 L1186 109 L1186 120 Z M1202 120 L1202 113 L1189 113 L1198 94 L1193 94 L1200 77 L1197 77 L1204 54 L1211 77 L1208 77 L1215 94 L1210 94 L1219 113 L1206 113 L1206 120 Z M1220 120 L1220 114 L1207 114 L1217 96 L1212 96 L1219 81 L1215 81 L1223 60 L1230 81 L1227 81 L1234 96 L1229 96 L1239 114 L1226 114 L1226 120 Z M1239 120 L1239 114 L1220 114 L1234 97 L1226 97 L1236 83 L1232 83 L1242 63 L1252 83 L1248 83 L1258 97 L1250 97 L1264 114 L1245 114 L1245 120 Z M1265 120 L1265 109 L1243 109 L1258 75 L1250 75 L1261 46 L1256 46 L1268 7 L1281 46 L1275 46 L1287 75 L1278 75 L1294 109 L1271 109 L1271 120 Z M1301 120 L1301 111 L1280 111 L1294 85 L1287 85 L1297 63 L1292 63 L1303 33 L1315 63 L1310 63 L1320 85 L1312 85 L1327 111 L1306 111 L1306 120 Z M1326 120 L1326 115 L1313 115 L1323 100 L1317 100 L1324 88 L1321 88 L1328 71 L1336 88 L1333 88 L1340 100 L1334 100 L1344 115 L1331 115 L1331 120 Z M1349 120 L1349 109 L1328 109 L1343 75 L1335 75 L1345 46 L1341 46 L1352 8 L1363 46 L1358 46 L1369 75 L1361 75 L1375 109 L1355 109 L1355 120 Z M1373 120 L1373 112 L1353 112 L1367 88 L1359 88 L1369 67 L1365 67 L1376 40 L1386 67 L1382 67 L1392 88 L1384 88 L1398 112 L1378 112 L1378 120 Z M1405 120 L1405 109 L1389 109 L1400 74 L1394 74 L1402 45 L1398 45 L1407 6 L1416 45 L1412 45 L1421 74 L1414 74 L1426 109 L1410 109 L1410 120 Z M1424 120 L1424 110 L1405 110 L1419 81 L1412 81 L1421 56 L1417 56 L1427 23 L1437 56 L1433 56 L1442 81 L1435 81 L1449 110 L1430 110 L1430 120 Z M1457 120 L1457 111 L1436 111 L1450 82 L1442 82 L1453 58 L1448 58 L1459 26 L1471 58 L1466 58 L1477 82 L1468 82 L1483 111 L1462 111 L1462 120 Z M0 110 H1440 V120 H0 Z"/>
   </svg>
 </header>
 
@@ -588,6 +559,39 @@ svg { flex: none; }
     </div>
   </section>
 
+  <section id="best" class="proof band" aria-labelledby="best-title">
+    <div class="wrap proof-grid">
+      <svg class="seal" viewBox="0 0 240 240" role="img" aria-labelledby="seal-title">
+        <title id="seal-title">Best of 2025, Mexican restaurant, American Fork</title>
+        <circle cx="120" cy="120" r="118" fill="#000000"/>
+        <circle cx="120" cy="120" r="103" fill="none" stroke="#62F006" stroke-width="6"/>
+        <circle cx="120" cy="120" r="91" fill="none" stroke="#F2ECDC" stroke-width="1.5" stroke-dasharray="2 6"/>
+        <text x="120" y="80" text-anchor="middle" fill="#F2ECDC" font-size="24" font-weight="600">Best of</text>
+        <text x="120" y="140" text-anchor="middle" fill="#62F006" font-size="70" font-weight="800">2025</text>
+        <text x="120" y="164" text-anchor="middle" fill="#F2ECDC" font-size="17" font-weight="600">Mexican restaurant</text>
+        <text x="120" y="183" text-anchor="middle" fill="#F2ECDC" font-size="17" font-weight="600">American Fork</text>
+      </svg>
+      <div>
+        <div class="section-head">
+          <h2 id="best-title">Best Mexican restaurant in American Fork for 2025</h2>
+          <p>BusinessRate named Off Road its Best of 2025 winner for Mexican restaurants in American Fork. The award is based on Google reviews, where the truck holds 4.8 stars from 326 reviewers.</p>
+        </div>
+        <h3>What regulars bring up most</h3>
+        <ul class="blazes">
+          <li>The carne asada</li>
+          <li>Birria and quesabirria tacos</li>
+          <li>Breakfast burritos</li>
+          <li>Big portions at fair prices</li>
+          <li>Quick, friendly service</li>
+          <li>Homemade salsas</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Off+Road+Mexican+Food&amp;query_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">Read the reviews on Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="find" class="find band" aria-labelledby="find-title">
     <div class="wrap">
       <div class="section-head">
@@ -629,26 +633,6 @@ svg { flex: none; }
     </div>
   </section>
 
-  <section id="reviews" class="reviews band" aria-labelledby="reviews-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="reviews-title">4.8 stars from 326 Google reviews</h2>
-        <p>Here's what regulars bring up most.</p>
-      </div>
-      <ul class="blazes">
-        <li>The carne asada</li>
-        <li>Birria and quesabirria tacos</li>
-        <li>Breakfast burritos</li>
-        <li>Big portions at fair prices</li>
-        <li>Quick, friendly service</li>
-        <li>Homemade salsas</li>
-      </ul>
-      <div class="cta-row">
-        <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Off+Road+Mexican+Food&amp;query_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">Read the reviews on Google</a>
-      </div>
-    </div>
-  </section>
-
   <section id="catering" class="catering band" aria-labelledby="catering-title">
     <div class="wrap catering-grid">
       <div class="section-head">
@@ -657,7 +641,7 @@ svg { flex: none; }
       </div>
       <div>
         <div class="cta-row">
-          <a class="btn btn-dark" href="tel:+13852830268">
+          <a class="btn btn-black" href="tel:+13852830268">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 5.9 5.9l1.5-2.3L20 14.5V18a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
             Call about catering
           </a>
@@ -675,9 +659,7 @@ svg { flex: none; }
 <footer class="foot">
   <div class="wrap">
     <div class="foot-grid">
-      <div>
-        <p class="wordmark"><b>Off Road</b> <span>Mexican Food</span></p>
-      </div>
+      <img class="foot-logo" src="assets/logo-320.webp" width="320" height="320" alt="Off Road Mexican Food" loading="lazy">
       <div>
         <h2>Visit</h2>
         <address>
@@ -700,11 +682,11 @@ svg { flex: none; }
 </footer>
 
 <nav class="actionbar" aria-label="Quick actions">
-  <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=Off+Road+Mexican+Food%2C+641+S+500+E+St%2C+American+Fork%2C+UT+84003&amp;destination_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">
+  <a class="btn btn-line-light" href="https://www.google.com/maps/dir/?api=1&amp;destination=Off+Road+Mexican+Food%2C+641+S+500+E+St%2C+American+Fork%2C+UT+84003&amp;destination_place_id=ChIJRyhs6z-DTYcR5iOqZZ-kj-0">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8-8-2z"/></svg>
     Directions
   </a>
-  <a class="btn btn-line" href="#menu">Menu</a>
+  <a class="btn btn-line-light" href="#menu">Menu</a>
   <a class="btn btn-lime" href="tel:+13852830268">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 5.9 5.9l1.5-2.3L20 14.5V18a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
     Call to order

@@ -1,23 +1,34 @@
 # Off Road Mexican Food
 
-Single-page website for Off Road Mexican Food, the lime-green taco truck at 641 S 500 E St, American Fork, UT 84003.
+Single-page website for Off Road Mexican Food, the green taco truck at 641 S 500 E St, American Fork, UT 84003. Explore the flavor.
 
-Everything lives in `index.html`: markup, styles, Restaurant schema (JSON-LD) and a small script that shows live open/closed status in America/Denver time. The only external request is Google Fonts (Barlow and Barlow Condensed).
+`index.html` holds the markup, styles, Restaurant schema (JSON-LD) and a small script that shows live open/closed status in America/Denver time. `assets/` holds the logo and icons. The only external request is Google Fonts (Barlow and Barlow Condensed).
+
+## Brand colors
+
+Sampled from the logo. The page uses only these (plus transparencies of them):
+
+| Color | Hex |
+| --- | --- |
+| Lime | `#62F006` |
+| Black | `#000000` |
+| White | `#FFFFFF` |
+| Signpost cream | `#F2ECDC` |
 
 ## Deploy
 
 Any static host works. Point it at this repo with no build command and `/` as the publish directory:
 
-- **Cloudflare Pages** or **Netlify**: connect the repo, leave the build command empty.
 - **GitHub Pages**: Settings → Pages → deploy from the `main` branch, root folder.
+- **Cloudflare Pages** or **Netlify**: connect the repo, leave the build command empty.
 
 ## Before launch
 
 - Confirm with the owner that they take phone orders and that (385) 283-0268 can receive texts.
 - Confirm burrito names and spellings.
-- Once the domain is known, add `<link rel="canonical">` and `og:url` to the `<head>`.
+- Once the domain is known, add `<link rel="canonical">`, `og:url`, `og:image` (the logo) and schema `logo` / `url` to the `<head>`.
 - Add the site's URL to the Google Business Profile.
-- Update the rating and review count (hero and reviews heading) now and then.
+- Update the rating and review count (hero and the Best of 2025 section) now and then.
 
 ## Editing hours
 
