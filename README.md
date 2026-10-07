@@ -6,13 +6,14 @@ Single-page website for Off Road Mexican Food, the green taco truck at 641 S 500
 
 ## Logo
 
-The logo is the emblem painted on the trailer: red-rock spires, a black Jeep towing a taco trailer, and "OFF ROAD MEXICAN FOOD". It was rebuilt from a photo of the truck: two cast shadows relit, the panel seam and screw heads removed, the slight camera angle straightened, and the paint flattened into its 11 colors.
+The logo is the round badge on the truck: "OFF ROAD" arched over red-rock spires, a black Jeep with its light bar lit, and "MEXICAN FOOD" arched along the bottom. It was rebuilt from a photo of the trailer. The glossy vinyl reflected the sky and the photographer, so the sky sheen was measured and removed in linear light, the badge was straightened, and the paint was flattened into its colors. The Jeep's windows were hidden by the reflection and were redrawn from the photo; the faint dark-on-dark "EXPLORE THE FLAVOR" tagline under the Jeep couldn't be recovered and is left out.
 
 - `assets/off-road-logo.png`: 2048 × 2048 transparent PNG for menus, social media and print.
 - The page embeds a 720px copy in the `<symbol id="logo">` near the top of `<body>`; replace that base64 data to swap the logo.
-- On dark backgrounds, put the logo on lime (as in the footer). Its ring and lettering are black, like on the truck.
+- On dark backgrounds, put the logo on lime (as in the footer); its outer ring is black.
+- For print, the original artwork file from whoever made the trailer's vinyl will always beat a photo rebuild.
 
-Emblem colors: black `#20201B`, charcoal `#434545`, sky `#A9E6E1`, cream `#FCF5D3`, light red `#EF6344`, red `#BF463B`, dark red `#A2463E`, orange `#D88249`, yellow `#FCB858`, light yellow `#FECB64`, green `#7AB44C`.
+Badge colors: black `#141414`, charcoal `#3B3D3C`, tan `#B69760`, cream `#F0DA9B`, red `#96402F`, dark red `#5E2219`, light yellow `#FFDD70`.
 
 ## English and Spanish
 
