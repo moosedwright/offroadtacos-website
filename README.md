@@ -2,9 +2,17 @@
 
 Single-page website for Off Road Mexican Food, the green taco truck at 641 S 500 E St, American Fork, UT 84003. Explore the flavor.
 
-`index.html` is self-contained: markup, styles, the logo (embedded once and reused in the hero and footer), Restaurant schema (JSON-LD) and a small script that shows live open/closed status in America/Denver time. It works opened on its own, with nothing next to it. `assets/` holds only the home-screen icon for phones. The only external request is Google Fonts (Barlow and Barlow Condensed).
+`index.html` is self-contained: markup, styles, the logo (embedded once and reused in the hero and footer), Restaurant schema (JSON-LD) and a small script that shows live open/closed status in America/Denver time. It works opened on its own, with nothing next to it. `assets/` holds the full-size logo and the home-screen icon for phones. The only external request is Google Fonts (Barlow and Barlow Condensed).
 
-To swap the logo, replace the base64 data in the `<symbol id="logo">` near the top of `<body>`.
+## Logo
+
+The logo is the emblem painted on the trailer: red-rock spires, a black Jeep towing a taco trailer, and "OFF ROAD MEXICAN FOOD". It was rebuilt from a photo of the truck: two cast shadows relit, the panel seam and screw heads removed, the slight camera angle straightened, and the paint flattened into its 11 colors.
+
+- `assets/off-road-logo.png`: 2048 × 2048 transparent PNG for menus, social media and print.
+- The page embeds a 720px copy in the `<symbol id="logo">` near the top of `<body>`; replace that base64 data to swap the logo.
+- On dark backgrounds, put the logo on lime (as in the footer). Its ring and lettering are black, like on the truck.
+
+Emblem colors: black `#20201B`, charcoal `#434545`, sky `#A9E6E1`, cream `#FCF5D3`, light red `#EF6344`, red `#BF463B`, dark red `#A2463E`, orange `#D88249`, yellow `#FCB858`, light yellow `#FECB64`, green `#7AB44C`.
 
 ## English and Spanish
 
@@ -20,7 +28,7 @@ DoorDash (delivery and pickup): https://www.doordash.com/store/off-road-mexican-
 
 ## Brand colors
 
-Sampled from the logo. The page uses only these (plus transparencies of them):
+The page itself uses only these (plus transparencies of them). Lime is the truck's green; the logo sits on it just as it does on the trailer.
 
 | Color | Hex |
 | --- | --- |
